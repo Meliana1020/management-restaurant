@@ -3,7 +3,7 @@ const path = require('path');
 const fs = require('fs');
 
 // ini akan resolve ke: projectroot/uploads/menu (pasti benar)
-const menuDir = path.join(__dirname, '..', '..', 'uploads', 'menu');
+const menuDir = path.join(__dirname, '..', 'uploads', 'menu');
 if (!fs.existsSync(menuDir)) {
   fs.mkdirSync(menuDir, { recursive: true });
 }

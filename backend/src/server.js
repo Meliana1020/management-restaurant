@@ -15,7 +15,7 @@ app.use(express.json());
 app.use('/users', userRoutes);
 app.use('/menu', menuRoutes);
 app.use('/transaksi', transaksiRoutes);
-app.use('/uploads', express.static(path.join(__dirname, '..', 'uploads')));
+app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 app.use('/laporan', laporanRoutes);
 app.use('/detailtransaksi', detailTransaksiRoutes); 
 
